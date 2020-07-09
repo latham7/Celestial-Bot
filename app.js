@@ -10,7 +10,11 @@ const prefix = '~';
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`)
-//    client.user.setActivity("Created by Laythumm").catch(console.error);
+
+
+    setInterval(() => {
+
+    })
 
     ping('mc.celestial-mc.com', 25565, (error, response) => {
         client.user.setActivity("Online Players: " + response.onlinePlayers)
